@@ -1,0 +1,16 @@
+.navbar a.active {
+  background-color: rgba(100, 255, 218, 0.1);
+  color: #64ffda;
+  position: relative;
+}
+
+.navbar a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 2px;
+  background-color: #64ffda;
+}

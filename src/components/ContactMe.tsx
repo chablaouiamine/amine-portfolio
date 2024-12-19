@@ -26,25 +26,22 @@ export default function ContactMe() {
           <div className="contact-details">
             <div className="contact-item">
               <FaEnvelope className="contact-icon" />
-              <span>your.email@example.com</span>
+              <span>chabamine.at@gmail.com</span>
             </div>
             <div className="contact-item">
               <FaPhone className="contact-icon" />
-              <span>+1 234 567 890</span>
+              <span>+212622667653</span>
             </div>
           </div>
 
-          <div className="social-links">
+          {/* <div className="social-links">
             <a href="https://github.com/chablaouiamine" target="_blank" rel="noopener noreferrer">
               <FaGithub />
             </a>
             <a href="https://www.linkedin.com/in/amine-chablaoui-371950247/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
             </a>
-            {/* <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
-              <FaTwitter />
-            </a> */}
-          </div>
+          </div> */}
         </div>
 
         <div className="contact-form-container">
