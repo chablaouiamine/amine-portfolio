@@ -2,12 +2,15 @@ import {
   FaHtml5, FaCss3Alt, FaJs, FaPython, FaJava,
   FaReact, FaBootstrap, FaNode,
   FaGit, FaGithub, FaDocker, FaJira,
-  FaNpm
+  FaNpm,
+  FaLaravel
 } from 'react-icons/fa';
 import { 
   SiTypescript, SiTailwindcss, SiExpress, 
   SiPostgresql, SiMysql, SiMongodb, SiOracle,
-  SiPostman, SiNextdotjs 
+  SiPostman, SiNextdotjs, 
+  SiDotnet,
+  SiSelenium
 } from 'react-icons/si';
 import '../styles/Skills.css';
 
@@ -32,6 +35,8 @@ const skillCategories = [
       { name: "Express.js", icon: <SiExpress /> },
       { name: "Bootstrap", icon: <FaBootstrap /> },
       { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+      { name: "ASP.NET", icon: <SiDotnet />},
+      { name: "Laravel", icon: <FaLaravel />}
     ]
   },
   {
@@ -42,6 +47,7 @@ const skillCategories = [
       { name: "Docker", icon: <FaDocker /> },
       { name: "Postman", icon: <SiPostman /> },
       { name: "NPM", icon: <FaNpm /> },
+      { name: "Selenium", icon: <SiSelenium /> },
     ]
   },
   {

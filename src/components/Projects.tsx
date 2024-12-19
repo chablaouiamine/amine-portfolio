@@ -10,16 +10,16 @@ const projects = [
     link: "#"
   },
   {
-    title: "Scholar Orientation Web Application",
-    description: "Chatbot powered by AI. The chatbot helps new students find information about the university, courses, etc.",
-    technologies: ["React.js", "Django", "OpenAI API", "PostgreSQL", "Bootstrap"],
-    imageUrl: "scholar_orientation2.png",
+    title: "Hotel Booking Web Application",
+    description: "A hotel booking web application that allows users to search and book hotels.",
+    technologies: ["ASP.NET", "SQL Server"],
+    imageUrl: "hotel.jpg",
     link: "#"
   },
   {
     title: "Pomodoro Timer",
     description: "A simple productivity app that helps you stay focused and manage your time effectively using the Pomodoro Technique.",
-    technologies: ["React.js", "Shadcn", "Tailwind CSS"],
+    technologies: ["React", "Shadcn", "Tailwind CSS"],
     imageUrl: "pomodoro.png",
     link: "#"
   }
