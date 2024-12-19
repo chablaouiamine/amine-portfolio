@@ -13,9 +13,9 @@ const App: React.FC = () => {
   useEffect(() => {
     // Smooth scroll behavior
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', (e: MouseEvent) => {
+      anchor.addEventListener('click', (e: Event) => {
         e.preventDefault();
-        const href = (e.currentTarget as HTMLAnchorElement).getAttribute('href')!;
+        const href = ((e.currentTarget as HTMLAnchorElement).getAttribute('href')!);
         const target = document.querySelector(href);
         target?.scrollIntoView({ behavior: 'smooth' });
       });

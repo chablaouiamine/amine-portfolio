@@ -1,20 +1,19 @@
-import { useEffect, useRef } from 'react';
 import { 
   FaHtml5, FaCss3Alt, FaJs, FaPython, FaJava,
-  FaReact, FaBootstrap, FaNode, FaSass,
-  FaGit, FaGithub, FaDocker, FaJira, FaAws,
-  FaNpm, FaYarn
+  FaReact, FaBootstrap, FaNode,
+  FaGit, FaGithub, FaDocker, FaJira,
+  FaNpm
 } from 'react-icons/fa';
 import { 
   SiTypescript, SiTailwindcss, SiExpress, 
   SiPostgresql, SiMysql, SiMongodb, SiOracle,
-  SiJenkins, SiPostman, SiNextdotjs 
+  SiPostman, SiNextdotjs 
 } from 'react-icons/si';
 import '../styles/Skills.css';
 
 const skillCategories = [
   {
-    category: "Programming Languages",
+    category: "Languages",
     skills: [
       { name: "JavaScript", icon: <FaJs /> },
       { name: "TypeScript", icon: <SiTypescript /> },
@@ -33,7 +32,6 @@ const skillCategories = [
       { name: "Express.js", icon: <SiExpress /> },
       { name: "Bootstrap", icon: <FaBootstrap /> },
       { name: "Tailwind CSS", icon: <SiTailwindcss /> },
-      { name: "SASS", icon: <FaSass /> }
     ]
   },
   {
@@ -44,7 +42,6 @@ const skillCategories = [
       { name: "Docker", icon: <FaDocker /> },
       { name: "Postman", icon: <SiPostman /> },
       { name: "NPM", icon: <FaNpm /> },
-      { name: "Yarn", icon: <FaYarn /> }
     ]
   },
   {
@@ -61,8 +58,6 @@ const skillCategories = [
     skills: [
       { name: "Scrum", icon: <FaJira /> },
       { name: "Jira", icon: <FaJira /> },
-      { name: "CI/CD", icon: <SiJenkins /> },
-      { name: "AWS", icon: <FaAws /> }
     ]
   }
 ];
