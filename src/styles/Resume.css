@@ -1,0 +1,173 @@
+.resume-section {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    padding: 5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .resume-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 3rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .resume-left {
+    flex: 1;
+    padding-right: 2rem;
+  }
+  
+  .resume-left h2 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .resume-left h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #64ffda;
+  }
+  
+  .resume-subtitle {
+    color: #f0f0f0;
+    font-size: 1.2rem;
+    opacity: 0.8;
+  }
+  
+  .resume-divider {
+    width: 1px;
+    align-self: stretch;
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      #ffffff,
+      transparent
+    );
+  }
+  
+  .resume-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .resume-preview {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .resume-preview img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .resume-preview img:hover {
+    transform: translateY(-5px);
+  }
+  
+  .resume-download-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: transparent;
+    color: #64ffda;
+    border: 2px solid #64ffda;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  
+  .resume-download-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(100, 255, 218, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+  }
+  
+  .resume-download-btn:hover::before {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .resume-download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(100, 255, 218, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 968px) {
+    .resume-container {
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem;
+    }
+  
+    .resume-left {
+      padding-right: 0;
+      text-align: center;
+    }
+  
+    .resume-left h2::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .resume-divider {
+      width: 80%;
+      height: 1px;
+      margin: 1rem 0;
+    }
+  
+    .resume-preview {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .resume-section {
+      padding: 3rem 1rem;
+    }
+  
+    .resume-left h2 {
+      font-size: 2rem;
+    }
+  
+    .resume-subtitle {
+      font-size: 1rem;
+    }
+  
+    .resume-download-btn {
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+    }
+  }

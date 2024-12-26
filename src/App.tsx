@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import ContactMe from './components/ContactMe';
 import Footer from './components/Footer';
+import Resume from './components/Resume';
 import './App.css';
 
 const App: React.FC = () => {
@@ -31,6 +32,7 @@ const App: React.FC = () => {
       <Projects />
       <Skills />
       <ContactMe />
+      <Resume />
       <Footer />
     </div>
   );
