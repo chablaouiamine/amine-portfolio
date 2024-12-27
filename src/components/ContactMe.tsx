@@ -26,7 +26,7 @@ export default function ContactMe() {
           <div className="contact-details">
             <div className="contact-item">
               <FaEnvelope className="contact-icon" />
-              <span>chabamine.at@gmail.com</span>
+              <span>chablaouiamine.pro@gmail.com</span>
             </div>
             <div className="contact-item">
               <FaPhone className="contact-icon" />
