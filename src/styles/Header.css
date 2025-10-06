@@ -18,10 +18,24 @@
 }
 
 .header-content {
-  text-align: center;
   position: relative;
   z-index: 1;
   padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-main-content {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  justify-content: space-between;
+}
+
+.header-text-content {
+  flex: 1;
+  text-align: left;
 }
 
 .floating-shapes .shape {
@@ -61,9 +75,9 @@
 }
 
 .profile-image-container {
-  margin-bottom: 2rem;
   position: relative;
-  display: inline-block;
+  display: flex;
+  flex-shrink: 0;
 }
 
 .profile-image-border {
@@ -110,19 +124,21 @@
   min-height: 2em;
   position: relative;
   margin-bottom: 2rem;
+  display: inline-block;
 }
 
 .typing-text::after {
   content: '|';
-  position: absolute;
-  right: -4px;
+  color: #64ffda;
+  font-weight: bold;
   animation: blink 1s infinite;
+  margin-left: 2px;
 }
 
 .cta-container {
   display: flex;
   gap: 1rem;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 2rem;
 }
 
@@ -162,6 +178,16 @@
 }
 
 @media (max-width: 768px) {
+  .header-main-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .header-text-content {
+    text-align: center;
+  }
+
   .profile-image {
     width: 200px;
     height: 200px;
@@ -178,6 +204,7 @@
   .cta-container {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 }
 
