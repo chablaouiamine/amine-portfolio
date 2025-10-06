@@ -49,7 +49,7 @@ export default function Header() {
             style={{ y: scrollY * 0.2 }}
           >
             <div className="profile-image-border">
-              <img src="/my_img.jpg" alt="Profile" className="profile-image" />
+              <img src="my_img.jpg" alt="Profile" className="profile-image" />
             </div>
             <div className="profile-image-glow"></div>
           </motion.div>
