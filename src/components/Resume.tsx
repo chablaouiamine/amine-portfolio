@@ -5,7 +5,7 @@ export default function Resume() {
           <h2>Resume</h2>
           <div className="resume-content">
             <a 
-              href="https://chablaouiamine.github.io/my-cv/cv.pdf" 
+              href="https://chablaouiamine.github.io/my-cv/cv-en.pdf" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="resume-download-btn"
